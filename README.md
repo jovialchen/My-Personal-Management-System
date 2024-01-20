@@ -1,7 +1,7 @@
 [Chinese](README_cn.md)
 
 # My Personal Management System
-![Screenshot](C:\Joyce\myLife\PersonalManagementSystem\Screenshot 2024-01-20 171036.png)
+![Screenshot](Screenshot 2024-01-20 171036.png)
 
 ## Project Introduction
 My Personal Management System is a tool designed to track time and finances. It allows users to input their daily activities and financial transactions easily through Excel, and view statistical data through a user-friendly interface.
