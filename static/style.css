@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'CuteFont';
+    src: url('fonts/regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CuteFont', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+.home-button {
+    position: fixed; /* 固定位置 */
+    top: 10px; /* 距离顶部10像素 */
+    right: 10px; /* 距离右边10像素 */
+    padding: 10px 15px; /* 内边距 */
+    background-color: #a0c4ff; /* 背景色 */
+    color: black; /* 文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+    border-radius: 5px; /* 圆角边框 */
+    font-size: 1em; /* 字体大小 */
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景色 */
+}
+
+.banner {
+    background: url('img/banner.png') no-repeat center center;
+    background-size: cover;
+    color: Black;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.2em;
+}
+
+#slogan-container, .summary-box {
+    background-color: #ffefd5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px auto 0;
+    display: inline-block;
+}
+
+#slogan-container {
+    font-size: 1.5em;
+}
+
+.big-round-button {
+    display: inline-block; /* 允许设置宽高 */
+    padding: 20px 40px; /* 增大内部间距以放大按钮 */
+    font-size: 2em; /* 增大字体大小 */
+    color: black; /* 字体颜色 */
+    background-color: #a0c4ff; /* 背景颜色 */
+    border: none; /* 去除边框 */
+    border-radius: 50px; /* 边框圆角 */
+    text-decoration: none; /* 去除下划线 */
+    text-align: center; /* 文本居中 */
+    transition: background-color 0.3s; /* 过渡效果 */
+    margin: 10px; /* 添加一些外边距 */
+}
+
+.big-round-button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景颜色 */
+}
+
+.week-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 子项顶部对齐 */
+    flex-wrap: wrap; /* 允许子项在必要时换行 */
+    gap: 20px; /* 子项之间的间隔 */
+}
+
+.week-summary, .all-time-summary {
+    flex: 1; /* 每个子项占据可用空间的等份 */
+    min-width: 300px; /* 子项的最小宽度 */
+}
+
+.chart, .chart-box {
+    flex: 1 1 300px;
+    margin: 10px;
+    min-height: 300px;
+    box-sizing: border-box;
+}
+
+.summary-box {
+    width: 100px; /* 设置宽度 */
+    height: 100px; /* 设置高度，与宽度相同，形成正方形 */
+    line-height: 100px; /* 确保文本垂直居中 */
+    text-align: center; /* 文本水平居中 */
+    background-color: #a0c4ff;
+    border: 1px solid #ccc;
+    font-size: 1.2em; /* 增大字体大小 */
+    margin: 10px auto; /* 居中显示，并添加上下边距 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Optional: makes the box a circle */
+}
+
+.chart-box {
+    flex: 1; /* 允许图表增长填满可用空间 */
+    min-height: 300px; /* 设置一个最小高度 */
+    padding: 10px;
+    box-sizing: border-box;
+}
+#fancy-table {
+    width: 80%; /* 表格宽度 */
+    margin: 20px auto; /* 居中显示 */
+    border-collapse: collapse; /* 边框合并 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+    font-size: 1.4em; /* 增大整个表格的字体大小 */
+}
+
+#fancy-table th, #fancy-table td {
+    border: 1px solid #ddd; /* 边框 */
+    padding: 15px; /* 增大内边距 */
+    text-align: center; /* 文本居中 */
+}
+
+#fancy-table th {
+    background-color: #a0c4ff; /* 标题背景色 */
+    color: black; /* 标题字体颜色 */
+    font-size: 1.4em; /* 特别为表头增大字体大小 */
+}
+
+#fancy-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* 间隔行背景色 */
+}
+
+#fancy-table tr:hover {
+    background-color: #ddd; /* 鼠标悬停行背景色 */
+}
+.month-money-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: flex-start; /* 子项顶部对齐 */
+    flex-wrap: wrap; /* 允许子项在必要时换行 */
+    gap: 20px; /* 子项之间的间隔 */
+}
+
+.month-money-summary, .all-time-money-summary {
+    flex: 1; /* 每个子项占据可用空间的等份 */
+    min-width: 300px; /* 子项的最小宽度 */
+}
+
+
+#second-fancy-table, #expense-category-chart, #expense-category-chart-last-month {
+    width: 100%; /* 图表和表格占据全部宽度 */
+    margin-bottom: 20px;
+}
+#second-fancy-table {
+    border-collapse: collapse; /* 边框合并 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+    font-size: 1.4em; /* 增大整个表格的字体大小 */
+}
+#second-fancy-table tr:hover {
+    background-color: #ddd; /* 鼠标悬停行背景色 */
+}
+/* 您之前的其他样式 */
+
+
+@media (max-width: 768px) {
+    .summary-box {
+        width: 80px; /* 小屏幕上的尺寸调整 */
+        height: 80px;
+        line-height: 80px;
+        font-size: 1em; /* 小屏幕上的字体尺寸调整 */
+    }
+}
+
