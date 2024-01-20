@@ -1,5 +1,5 @@
 # 我的个人管理系统
-![](C:\Joyce\myLife\PersonalManagementSystem\Screenshot 2024-01-20 171036.png)
+![](Screenshot.png)
 ## 项目简介
 我的个人管理系统是一个用于统计时间和金钱的工具。它允许用户通过简单的Excel输入来跟踪每日活动和财务流水，通过一个易于使用的界面来查看数据统计。
 
