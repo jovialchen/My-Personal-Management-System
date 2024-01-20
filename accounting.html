@@ -1,0 +1,76 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的账本</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<a href="/" class="home-button">Homepage</a>
+<header>
+    <div class="banner">
+        <h1 style="font-family: 'CuteFont', sans-serif;">My Accounting Book</h1>
+        <div id="slogan-container">
+            <div id="slogan">
+                Every Penny Needs My Attention
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <table id="fancy-table">
+        <tr>
+            <th>Time</th>
+            <th>Balance</th>
+        </tr>
+        <tr>
+            <td>Today</td>
+            <td>{{ total_balance }}</td>
+        </tr>
+        <tr>
+            <td>One Month Ago</td>
+            <td>{{ total_balance_1_month }}</td>
+        </tr>
+        <tr>
+            <td>Two Months Ago</td>
+            <td>{{ total_balance_2_month }}</td>
+        </tr>
+    </table>
+    <div class="month-money-container">
+        <div class="month-money-summary">
+            <div class="summary-box">Last Month</div>
+            <div id="expense-category-chart-last-month">{{ expense_category_chart_last_month | safe }}</div>
+            <table id="second-fancy-table">
+                <tr>
+                    <th>Item</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Expenditure</td>
+                    <td>{{ expense_last_month }}</td>
+                </tr>
+                <tr>
+                    <td>Income</td>
+                    <td>{{ income_last_month }}</td>
+                </tr>
+                <tr>
+                    <td>Transfer</td>
+                    <td>{{ informational_transfer_last_month }}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="all-time-money-summary">
+            <div class="summary-box">All</div>
+            <div id="expense-category-chart">{{ expense_category_chart | safe }}</div>
+            <div id="expense-tag-chart">{{ expense_tag_chart | safe }}</div>
+            <div id="expense-by-month">{{ expense_by_month | safe }}</div>
+            <div id="income-by-month">{{ income_by_month | safe }}</div>
+        </div>
+    </div>
+
+
+</main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Time Statistics</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<a href="/" class="home-button">Homepage</a>
+<header>
+    <div class="banner">
+        <h1 style="font-family: 'CuteFont', sans-serif;">My Time Statistics</h1>
+        <div id="slogan-container">
+            <div id="slogan">
+                Insight in Every Second - Elevate Decisions, Enhance Time.
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <!-- Visualization charts will be inserted here -->
+    <div class="week-container">
+        <div class="week-summary">
+            <div class="summary-box">Last Week</div>
+            <div class="chart">{{ last_week_project_chart|safe }}</div>
+            <div class="chart">{{ last_week_category_chart|safe }}</div>
+            <div class="chart">{{ last_week_daily_chart|safe }}</div>
+        </div>
+        <div class="all-time-summary">
+            <div class="summary-box">All</div>
+            <div class="chart" id="project_chart">{{ project_chart|safe }}</div>
+            <div class="chart" id="category_chart">{{ category_chart|safe }}</div>
+            <div class="chart" id="daily_chart">{{ daily_chart|safe }}</div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
