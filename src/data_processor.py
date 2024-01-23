@@ -14,9 +14,9 @@ def process_data(data):
         data['date'] = pd.to_datetime(data['date'])
     return data
 def filter_last_week_data(data):
-    current_date = datetime.now()
     start_of_week = current_date - timedelta(days=current_date.weekday() + 7)
-    end_of_week = start_of_week + timedelta(days=6)
+    start_of_week = datetime(start_of_week.year, start_of_week.month, start_of_week.day, 0, 0, 0)
+    end_of_week = start_of_week + timedelta(days=6, hours=23, minutes=59, seconds=59)
 
     return data[(data['date'] >= start_of_week) & (data['date'] <= end_of_week)]
 
